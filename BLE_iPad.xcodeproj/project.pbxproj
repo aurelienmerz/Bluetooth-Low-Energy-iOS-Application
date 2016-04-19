@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		883F1190196863FA00A9B945 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 883F118F196863FA00A9B945 /* LaunchImage.png */; };
+		88A9D06B19685CF700FE9ACB /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A9D06A19685CF700FE9ACB /* SettingsViewController.m */; };
 		88C8F8C91946E49C00206259 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C8F8C81946E49C00206259 /* Foundation.framework */; };
 		88C8F8CB1946E49C00206259 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C8F8CA1946E49C00206259 /* CoreGraphics.framework */; };
 		88C8F8CD1946E49C00206259 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C8F8CC1946E49C00206259 /* UIKit.framework */; };
@@ -14,13 +16,15 @@
 		88C8F8D51946E49C00206259 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C8F8D41946E49C00206259 /* main.m */; };
 		88C8F8D91946E49C00206259 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C8F8D81946E49C00206259 /* AppDelegate.m */; };
 		88C8F8DC1946E49C00206259 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88C8F8DA1946E49C00206259 /* Main.storyboard */; };
-		88C8F8DF1946E49C00206259 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C8F8DE1946E49C00206259 /* ViewController.m */; };
 		88C8F8E11946E49C00206259 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88C8F8E01946E49C00206259 /* Images.xcassets */; };
 		88C8F8E81946E49C00206259 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C8F8E71946E49C00206259 /* XCTest.framework */; };
 		88C8F8E91946E49C00206259 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C8F8C81946E49C00206259 /* Foundation.framework */; };
 		88C8F8EA1946E49C00206259 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C8F8CC1946E49C00206259 /* UIKit.framework */; };
 		88C8F8F21946E49C00206259 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88C8F8F01946E49C00206259 /* InfoPlist.strings */; };
 		88C8F8F41946E49C00206259 /* BLE_iPadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C8F8F31946E49C00206259 /* BLE_iPadTests.m */; };
+		88C8F8FE1946E4AB00206259 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C8F8FD1946E4AB00206259 /* CoreBluetooth.framework */; };
+		88C8F9011946E58100206259 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C8F9001946E58000206259 /* MainViewController.m */; };
+		88C8F9051946E5D600206259 /* bitpacker.c in Sources */ = {isa = PBXBuildFile; fileRef = 88C8F9031946E5D600206259 /* bitpacker.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		880E5769195180EA002D1150 /* samplingPeriods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = samplingPeriods.h; sourceTree = "<group>"; };
+		883F118F196863FA00A9B945 /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
+		88A9D06919685CF700FE9ACB /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		88A9D06A19685CF700FE9ACB /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		88C8F8C51946E49C00206259 /* BLE_iPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLE_iPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88C8F8C81946E49C00206259 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		88C8F8CA1946E49C00206259 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,14 +53,19 @@
 		88C8F8D71946E49C00206259 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		88C8F8D81946E49C00206259 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		88C8F8DB1946E49C00206259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		88C8F8DD1946E49C00206259 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		88C8F8DE1946E49C00206259 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		88C8F8E01946E49C00206259 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		88C8F8E61946E49C00206259 /* BLE_iPadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLE_iPadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88C8F8E71946E49C00206259 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		88C8F8EF1946E49C00206259 /* BLE_iPadTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BLE_iPadTests-Info.plist"; sourceTree = "<group>"; };
 		88C8F8F11946E49C00206259 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		88C8F8F31946E49C00206259 /* BLE_iPadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLE_iPadTests.m; sourceTree = "<group>"; };
+		88C8F8FD1946E4AB00206259 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		88C8F8FF1946E58000206259 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ../MainViewController.h; sourceTree = "<group>"; };
+		88C8F9001946E58000206259 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ../MainViewController.m; sourceTree = "<group>"; };
+		88C8F9021946E5CE00206259 /* TransferService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransferService.h; sourceTree = "<group>"; };
+		88C8F9031946E5D600206259 /* bitpacker.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bitpacker.c; sourceTree = "<group>"; };
+		88C8F9041946E5D600206259 /* bitpacker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitpacker.h; sourceTree = "<group>"; };
+		88C8F9061946EC2000206259 /* timerConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timerConstants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88C8F8FE1946E4AB00206259 /* CoreBluetooth.framework in Frameworks */,
 				88C8F8CB1946E49C00206259 /* CoreGraphics.framework in Frameworks */,
 				88C8F8CD1946E49C00206259 /* UIKit.framework in Frameworks */,
 				88C8F8C91946E49C00206259 /* Foundation.framework in Frameworks */,
@@ -82,6 +96,8 @@
 		88C8F8BC1946E49C00206259 = {
 			isa = PBXGroup;
 			children = (
+				88C8F9031946E5D600206259 /* bitpacker.c */,
+				88C8F9041946E5D600206259 /* bitpacker.h */,
 				88C8F8CE1946E49C00206259 /* BLE_iPad */,
 				88C8F8ED1946E49C00206259 /* BLE_iPadTests */,
 				88C8F8C71946E49C00206259 /* Frameworks */,
@@ -101,6 +117,7 @@
 		88C8F8C71946E49C00206259 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				88C8F8FD1946E4AB00206259 /* CoreBluetooth.framework */,
 				88C8F8C81946E49C00206259 /* Foundation.framework */,
 				88C8F8CA1946E49C00206259 /* CoreGraphics.framework */,
 				88C8F8CC1946E49C00206259 /* UIKit.framework */,
@@ -112,11 +129,16 @@
 		88C8F8CE1946E49C00206259 /* BLE_iPad */ = {
 			isa = PBXGroup;
 			children = (
+				88C8F9021946E5CE00206259 /* TransferService.h */,
+				880E5769195180EA002D1150 /* samplingPeriods.h */,
+				88C8F8FF1946E58000206259 /* MainViewController.h */,
+				88C8F9001946E58000206259 /* MainViewController.m */,
+				88A9D06919685CF700FE9ACB /* SettingsViewController.h */,
+				88A9D06A19685CF700FE9ACB /* SettingsViewController.m */,
+				88C8F9061946EC2000206259 /* timerConstants.h */,
 				88C8F8D71946E49C00206259 /* AppDelegate.h */,
 				88C8F8D81946E49C00206259 /* AppDelegate.m */,
 				88C8F8DA1946E49C00206259 /* Main.storyboard */,
-				88C8F8DD1946E49C00206259 /* ViewController.h */,
-				88C8F8DE1946E49C00206259 /* ViewController.m */,
 				88C8F8E01946E49C00206259 /* Images.xcassets */,
 				88C8F8CF1946E49C00206259 /* Supporting Files */,
 			);
@@ -126,6 +148,7 @@
 		88C8F8CF1946E49C00206259 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				883F118F196863FA00A9B945 /* LaunchImage.png */,
 				88C8F8D01946E49C00206259 /* BLE_iPad-Info.plist */,
 				88C8F8D11946E49C00206259 /* InfoPlist.strings */,
 				88C8F8D41946E49C00206259 /* main.m */,
@@ -228,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				883F1190196863FA00A9B945 /* LaunchImage.png in Resources */,
 				88C8F8E11946E49C00206259 /* Images.xcassets in Resources */,
 				88C8F8D31946E49C00206259 /* InfoPlist.strings in Resources */,
 				88C8F8DC1946E49C00206259 /* Main.storyboard in Resources */,
@@ -249,8 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88C8F8DF1946E49C00206259 /* ViewController.m in Sources */,
 				88C8F8D91946E49C00206259 /* AppDelegate.m in Sources */,
+				88C8F9051946E5D600206259 /* bitpacker.c in Sources */,
+				88A9D06B19685CF700FE9ACB /* SettingsViewController.m in Sources */,
+				88C8F9011946E58100206259 /* MainViewController.m in Sources */,
 				88C8F8D51946E49C00206259 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,6 +484,7 @@
 				88C8F8F91946E49C00206259 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88C8F8FA1946E49C00206259 /* Build configuration list for PBXNativeTarget "BLE_iPadTests" */ = {
 			isa = XCConfigurationList;
@@ -466,6 +493,7 @@
 				88C8F8FC1946E49C00206259 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
